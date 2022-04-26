@@ -2,3 +2,115 @@
     margin-top: $separacion-margen;
 
 }
+/*-------------------------------------------------------GRID INDEX ----------------------------------------------------------------- */
+.bodygrid-index
+{  
+   display: grid;
+   gap: 10px 10px;
+
+   grid-template-areas:
+     "grid-navbar-index grid-navbar-index grid-navbar-index"
+     ". grid-main-index ."
+     "grid-footer-index  grid-footer-index  grid-footer-index";
+ }
+ 
+ .grid-navbar-index
+  { 
+      grid-area: grid-navbar-index;  
+  }
+ 
+ .grid-main-index 
+ { 
+   display: grid;
+   grid-area: grid-main-index;
+   margin-top: 15px;
+   gap: 10px 10px;
+
+   grid-template-areas:
+     "boxcentral1-index boxcentral1-index boxcentral1-index boxcentral1-index"
+     "box1-index box2-index box3-index box4-index"
+     "boxcentral2-index boxcentral2-index boxcentral2-index boxcentral2-index"
+     "boxcentral3-index boxcentral3-index boxcentral3-index boxcentral3-index"
+     "boxcentral4-index boxcentral4-index boxcentral4-index boxcentral4-index";
+ }
+
+ .grid-footer-index 
+ { 
+     grid-area: grid-footer-index;  
+     color: white;/*color de letra*/
+     font-size: 20px;/*tamaño de la fuente*/
+     text-align: right; /*texto hacia la derecha*/
+     text-shadow: 3px 5px 5px grey; /*efecto difuminado*/ 
+ }
+ 
+ 
+ .box1-index 
+ { 
+   grid-area: box1-index;
+   text-align: center;
+   border-style: none; /*no borde */
+   
+ }
+ 
+ .box2-index 
+ { 
+   grid-area: box2-index; 
+   text-align: center;
+   border-style: none; /*no borde */
+ }
+ 
+ .box3-index 
+ { 
+   grid-area: box3-index; 
+   text-align: center;
+   border-style: none; /*no borde */
+ }
+ 
+ .box4-index 
+ { 
+   grid-area: box4-index;
+   text-align: center;
+   border-style: none; /*no borde */
+ }
+
+ .boxcentral1-index
+ { 
+   grid-area: boxcentral1-index;
+ }
+
+ .boxcentral2-index
+ { 
+    grid-area: boxcentral2-index;
+    color: rgb(201, 164, 14);/*color de letra*/
+    font-size: 20px;/*tamaño de la fuente*/
+    text-align: left;/*texto hacia la izquierda*/
+    border-style: solid; /*borde solido*/
+    border-color: white; /*color de borde*/
+    border-radius: 30px; /*redondear el borde*/
+    border-width: 6px; /*ancho de borde*/
+ }
+
+ .boxcentral3-index
+ { 
+   grid-area: boxcentral3-index;
+   color: rgb(201, 164, 14);/*color de letra*/
+   font-size: 20px;/*tamaño de la fuente*/
+   text-align: left;/*texto hacia la izquierda*/
+   border-style: solid; /*borde solido*/
+   border-color: white; /*color de borde*/
+   border-radius: 30px; /*redondear el borde*/
+   border-width: 6px; /*ancho de borde*/
+ }
+
+ .boxcentral4-index
+ { 
+   grid-area: boxcentral4-index;
+   color: rgb(201, 164, 14);/*color de letra*/
+   font-size: 20px;/*tamaño de la fuente*/
+   text-align: left;/*texto hacia la izquierda*/
+   border-style: solid; /*borde solido*/
+   border-color: white; /*color de borde*/
+   border-radius: 30px; /*redondear el borde*/
+   border-width: 6px; /*ancho de borde*/
+ }
+ 
