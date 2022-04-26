@@ -6,6 +6,7 @@
 .bodygrid-index
 {  
    display: grid;
+   grid-area: bodygrid-index;
    gap: 10px 10px;
 
    grid-template-areas:
@@ -76,6 +77,8 @@
  .boxcentral1-index
  { 
    grid-area: boxcentral1-index;
+   margin-top: 50px;
+   margin-bottom: 20px;
  }
 
  .boxcentral2-index
@@ -88,6 +91,8 @@
     border-color: white; /*color de borde*/
     border-radius: 30px; /*redondear el borde*/
     border-width: 6px; /*ancho de borde*/
+    margin: 20px;
+    padding: 20px;
  }
 
  .boxcentral3-index
@@ -100,6 +105,8 @@
    border-color: white; /*color de borde*/
    border-radius: 30px; /*redondear el borde*/
    border-width: 6px; /*ancho de borde*/
+   margin: 20px;
+   padding: 20px;
  }
 
  .boxcentral4-index
@@ -112,5 +119,6 @@
    border-color: white; /*color de borde*/
    border-radius: 30px; /*redondear el borde*/
    border-width: 6px; /*ancho de borde*/
+   margin: 20px;
+   padding: 20px;
  }
- 

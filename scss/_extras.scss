@@ -1,0 +1,32 @@
+* {
+    background-color: #eeddd2;
+}
+
+.imagencuadrada
+{
+   height: 250px;
+   width: 270px;
+   border-style: solid; /*borde solido*/
+   border-color: white; /*color de borde*/
+   border-radius: 30px; /*redondear el borde*/
+   border-width: 4px; /*ancho de borde*/
+}
+
+.logofooter /*los logos de intagram facebook y whatapp del footer*/
+{
+    margin-left: 20px;
+    border-style: none; /*sin borde*/
+    text-align: center;/*central el texto*/
+    float: left;/*la imagen se va hacia la izquierda*/
+}
+
+.logonavbar/*logo del navbar*/
+{
+  
+    border-style: solid; /*borde solido*/
+    border-color: white; /*color de borde*/
+    border-radius: 100px; /*redondear el borde*/
+    border-width: 2px; /*ancho de borde*/
+   
+}
+
