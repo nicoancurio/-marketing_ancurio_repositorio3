@@ -1,21 +1,27 @@
-.titulo /*titulo principal*/
+.extend-formatosdetitulos
 {
     text-align: center;/*central el texto*/
     text-shadow: 3px 5px 5px grey; /*efecto difuminado*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;/*fuente de texto*/
-    padding: 10px;/*el ancho del titulo*/
+ 
     color: white;/*color del titulo*/
+    
+}
+
+
+.titulo /*titulo principal*/
+{
+    @extend .extend-formatosdetitulos;
+    padding: 10px;/*el ancho del titulo*/
     font-size: 30px; /*ancho de fuente*/ 
 }
 
 .titulosecundario /*titulo secundario*/
 {
-    text-align: center;/*central el texto*/
-    text-shadow: 3px 5px 5px grey; /*efecto difuminado*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;/*fuente de texto*/
-    padding: 10px;/*el ancho del titulo*/
+    @extend .extend-formatosdetitulos;
     margin-left: 150px;
     margin-right: 150px;
-    color: white;/*color del titulo*/
     font-size: 18px; /*ancho de fuente*/ 
 }
+
+

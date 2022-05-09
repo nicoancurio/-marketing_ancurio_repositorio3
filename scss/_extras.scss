@@ -1,15 +1,23 @@
-body {
+
+body /*color detras de la pagina*/
+{
     background-color: #eeddd2;
+}
+
+@mixin tamanio ($ancho, $alto, $estiloborde,$colorborde, $radioborde, $anchoborde) 
+{
+    width: $ancho;/*ancho*/
+    height: $alto;/*alto*/
+    border-style: $estiloborde; /*borde solido*/
+    border-color: $colorborde; /*color de borde*/
+    border-radius: $radioborde; /*redondear el borde*/
+    border-width: $anchoborde; /*ancho de borde*/
+    
 }
 
 .imagencuadrada
 {
-   height: 250px;
-   width: 270px;
-   border-style: solid; /*borde solido*/
-   border-color: white; /*color de borde*/
-   border-radius: 30px; /*redondear el borde*/
-   border-width: 4px; /*ancho de borde*/
+    @include tamanio(250px, 270px, solid, white, 30px, 4px);
 }
 
 .logofooter /*los logos de intagram facebook y whatapp del footer*/

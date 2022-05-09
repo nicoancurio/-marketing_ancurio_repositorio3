@@ -59,33 +59,35 @@
     
 }
 
+.extend-dentrodelbox
+{ 
+  text-align: center;
+  border-style: none; /*no borde */
+  
+}
+
  .box1-index 
  { 
    grid-area: box1-index;
-   text-align: center;
-   border-style: none; /*no borde */
-   
+   @extend .extend-dentrodelbox;
  }
  
  .box2-index 
  { 
    grid-area: box2-index; 
-   text-align: center;
-   border-style: none; /*no borde */
+   @extend .extend-dentrodelbox;
  }
  
  .box3-index 
  { 
    grid-area: box3-index; 
-   text-align: center;
-   border-style: none; /*no borde */
+   @extend .extend-dentrodelbox;
  }
  
  .box4-index 
  { 
    grid-area: box4-index;
-   text-align: center;
-   border-style: none; /*no borde */
+   @extend .extend-dentrodelbox;
  }
 
 
