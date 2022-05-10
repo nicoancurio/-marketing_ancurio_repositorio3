@@ -92,20 +92,31 @@
 
 
 
- .boxcentral2-index
- { 
-    grid-area: boxcentral2-index;
-    color: rgb(201, 164, 14);/*color de letra*/
-    font-size: 20px;/*tamaño de la fuente*/
-    text-align: left;/*texto hacia la izquierda*/
-    border-style: solid; /*borde solido*/
-    border-color: white; /*color de borde*/
-    border-radius: 30px; /*redondear el borde*/
-    border-width: 6px; /*ancho de borde*/
-    margin: 20px;
-    padding: 20px;
- }
-
+ $estilobox: 
+ (
+   "colorbox": rgb(201, 164, 14),
+   "fuentebox": 20px,
+   "colorbordebox": white,
+   "radiodebordebox": 30px,
+   "anchobordebox": 6px,
+   "margenbox": 20px,
+   "paddingdebox": 20px
+ );
+ 
+  .boxcentral2-index
+  { 
+     grid-area: boxcentral2-index;
+     color: map-get($estilobox, colorbox) ;/*color de letra*/
+     font-size: map-get($estilobox, fuentebox) ;/*tamaño de la fuente*/
+     border-color: map-get($estilobox, colorbordebox) ; /*color de borde*/
+     border-radius: map-get($estilobox, radiodebordebox) ; /*redondear el borde*/
+     border-width: map-get($estilobox, anchobordebox) ; /*ancho de borde*/
+     margin: map-get($estilobox, margin);
+     padding: map-get($estilobox, paddingdebox);
+     text-align: left;/*texto hacia la izquierda*/
+     border-style: solid; /*borde solido*/
+  }
+ 
  .boxcentral3-index
  { 
    grid-area: boxcentral3-index;

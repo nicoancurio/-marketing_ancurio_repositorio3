@@ -65,18 +65,17 @@
   /*color de letra*/
   font-size: 20px;
   /*tamaño de la fuente*/
-  text-align: left;
-  /*texto hacia la izquierda*/
-  border-style: solid;
-  /*borde solido*/
   border-color: white;
   /*color de borde*/
   border-radius: 30px;
   /*redondear el borde*/
   border-width: 6px;
   /*ancho de borde*/
-  margin: 20px;
-  padding: 20px; }
+  padding: 20px;
+  text-align: left;
+  /*texto hacia la izquierda*/
+  border-style: solid;
+  /*borde solido*/ }
 
 .boxcentral3-index {
   grid-area: boxcentral3-index;
