@@ -1,1 +1,6 @@
 DESCRIPCION DEL SEO:
+
+Inserte "meta keywords" con palabras claves para cada seccion. En mi caso particular MARKETING","COMMUNITY MANAGER", "GESTION DE ANUNCIOS", "PAUTA PUBLICITARIA","BRANDING" y "IDENTIDAD DE MARCA" la cual hace referencia al rubro en el cual me encuentro.
+Inserte "meta description" de una descripcion clara y consisa de lo que va a proveer cada seccion. En mi caso particular en el indes declare "Agencia de marketing que impulsa el crecimiento de los negocios dentro de mundo digital". El cual cuando termine de desarollar las demas secciones se lo colocare con una descripcion mas expecifica a la seccion que haga mencion.
+Inserte "title" en la pagina index el cual voy a replicar en todas sus secciones y referenciando bien a la seccion que me encuentro.
+    
