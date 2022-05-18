@@ -11,3 +11,113 @@ h2{
     color: white;
 }
 
+.claseFooter{
+    color: white;/*color de letra*/
+    font-size: 20px;/*tamaño de la fuente*/
+    text-align: right; /*texto hacia la derecha*/
+    text-shadow: 3px 5px 5px grey; /*efecto difuminado*/ 
+}
+
+/*-----REDONDEO DE IMAGENES DE SERVICIOS-----*/
+.redondeoImagenServicios
+{
+    border-radius: 300px; /*redondear el borde*/
+    border-width: 2px; /*ancho de borde*/
+}
+
+/*-----TEXTO CENTRADO EN SERVICIOS-----*/
+.textoCentradoServicios 
+{
+    font-size: 30px;/*tamaño de la fuente*/
+    text-align: center;/*central el texto*/
+
+    
+}
+
+.textocentrado /*centrado de text0*/
+{
+    color: rgb(255, 255, 255);/*color de letra*/
+    font-size: 50px;/*tamaño de la fuente*/
+    text-align: center;/*central el texto*/
+    text-shadow: 3px 5px 5px grey; /*efecto difuminado*/
+    
+}
+
+/*-----PAGINA DE PLANES DE CONTENIDO-----*/
+table /*tabla de plantilla de contenido*/
+{
+   width: 100%;
+   height: 220px;
+   color: aliceblue;
+   text-align: center;
+   
+}
+
+th /*ttitulos de la tabla de plantilla de contenido*/
+{
+    font-size: 25px;/*tamaño de la fuente*/
+    background-color: rgb(228, 178, 72);/*cambia el fondo*/
+
+}
+
+td /*celdas de menor rango de la tabla de plantilla de contenido*/
+{
+    font-size: 20px;/*tamaño de la fuente*/
+    background-color: rgb(230, 212, 154);/*cambia el fondo*/
+
+}
+
+th:hover
+{
+  background-color: rgb(222, 191, 191);
+  cursor: pointer;/*cuando paso por la tabla se pone la manito*/
+}
+
+td:hover
+{
+  background-color: rgb(222, 191, 191);
+  cursor: pointer;/*cuando paso por la tabla se pone la manito*/
+}
+
+fieldset
+{
+background-color: antiquewhite;/*cambia el fondo*/
+
+}
+
+/*-----PAGINA DE NOSOTROS-----*/
+
+.texto2 /*tipo de texto 2*/
+{
+    color: white;/*color de letra*/
+    font-size: 20px;/*tamaño de la fuente*/
+    text-align: left;/*texto hacia la izquierda*/
+    
+}
+
+/*-----PAGINA DE CONTACTOS-----*/
+.webcentrado/*centrar youtube y maps en el medio*/
+{
+    display: block;/*hace que se haga un bloque*/
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.formulario
+{
+    color: gray;/*color de letra*/
+    font-size: 20px;/*ancho de fuente*/
+    text-shadow: 1px 2px 2px grey; /*efecto difuminado*/
+}
+
+.texto4 /*tipo de texto 4*/
+{
+    color: rgb(255, 255, 255);/*color de letra*/
+    font-size: 20px;/*tamaño de la fuente*/
+    text-align: center;/*texto centrado*/
+    text-shadow: 3px 5px 5px grey; /*efecto difuminado*/
+    
+}
