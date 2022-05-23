@@ -24,7 +24,47 @@
   grid-template-areas: "marketing-index marketing-index marketing-index marketing-index" "box1-index box2-index box3-index box4-index" "boxcentral2-index boxcentral2-index boxcentral2-index boxcentral2-index" "boxcentral3-index boxcentral3-index boxcentral3-index boxcentral3-index" "boxcentral4-index boxcentral4-index boxcentral4-index boxcentral4-index"; }
 
 .grid-footer-index {
-  grid-area: grid-footer-index; }
+  display: grid;
+  grid-area: grid-footer-index;
+  background-color: rgba(250, 235, 215, 0.875);
+  padding: 20px;
+  grid-template-areas: "logosAplicaciones-index  siAllMarketing-Index textoFooter-index"; }
+
+.logosAplicaciones-index {
+  display: grid;
+  grid-area: logosAplicaciones-index;
+  grid-template-columns: 0.1fr 0.9fr;
+  align-items: center;
+  justify-items: start;
+  grid-template-areas: "imagenlogosAplicaciones1-index  textologosAplicaciones1-index " "imagenlogosAplicaciones2-index  textologosAplicaciones2-index " "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "; }
+
+.siAllMarketing-Index {
+  grid-area: siAllMarketing-Index;
+  text-align: center;
+  margin-top: 3rem; }
+
+.imagenlogosAplicaciones1-index {
+  grid-area: imagenlogosAplicaciones1-index; }
+
+.imagenlogosAplicaciones2-index {
+  grid-area: imagenlogosAplicaciones2-index; }
+
+.imagenlogosAplicaciones3-index {
+  grid-area: imagenlogosAplicaciones3-index; }
+
+.textologosAplicaciones1-index {
+  grid-area: textologosAplicaciones1-index; }
+
+.textologosAplicaciones2-index {
+  grid-area: textologosAplicaciones2-index;
+  text-align: center; }
+
+.textologosAplicaciones3-index {
+  grid-area: textologosAplicaciones3-index;
+  text-align: center; }
+
+.textoFooter-index {
+  grid-area: textoFooter-index; }
 
 .marketing-index {
   grid-area: marketing-index;
@@ -32,7 +72,8 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.95;
-  padding: 300px; }
+  padding: 300px;
+  width: 100%; }
 
 .extend-dentrodelbox, .box1-index, .box2-index, .box3-index, .box4-index {
   text-align: center;
@@ -57,17 +98,18 @@
   /*color de letra*/
   font-size: 20px;
   /*tamaño de la fuente*/
+  text-align: left;
+  /*texto hacia la izquierda*/
+  border-style: solid;
+  /*borde solido*/
   border-color: white;
   /*color de borde*/
   border-radius: 30px;
   /*redondear el borde*/
   border-width: 6px;
   /*ancho de borde*/
-  padding: 20px;
-  text-align: left;
-  /*texto hacia la izquierda*/
-  border-style: solid;
-  /*borde solido*/ }
+  margin: 20px;
+  padding: 20px; }
 
 .boxcentral3-index {
   grid-area: boxcentral3-index;
@@ -259,6 +301,38 @@
 .texto3 {
   grid-area: texto3; }
 
+/*-----------------------------------MEDIA QUERY---------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .bodygrid-index {
+    display: grid;
+    grid-area: bodygrid-index;
+    gap: 10px 10px;
+    grid-template-areas: "grid-navbar-index" "grid-main-index" "grid-footer-index"; }
+  .grid-main-index {
+    display: grid;
+    grid-area: grid-main-index;
+    margin-top: 15px;
+    gap: 10px 10px;
+    grid-template-areas: "marketing-index " "boxcentral2-index" "box1-index" "boxcentral3-index" "boxcentral4-index"; }
+  .marketing-index {
+    grid-area: marketing-index;
+    background-image: url("https://img.freepik.com/foto-gratis/hombre-caucasico-trabajo-lanzamiento_53876-30174.jpg?t=st=1651012463~exp=1651013063~hmac=948459098cdbee8464da10370c2076cec5c4761d9c6c97d4f09ae05203d351e3&w=1380");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.95;
+    padding: 0px;
+    width: 100%; }
+  .box1-index {
+    display: none; }
+  .box2-index {
+    display: none; }
+  .box3-index {
+    display: none; }
+  .box4-index {
+    display: none; }
+  #footer {
+    flex-direction: column; } }
+
 .extend-formatosdetitulos, .titulo, .titulosecundario {
   text-align: center;
   /*central el texto*/
@@ -272,13 +346,13 @@
 .titulo {
   padding: 10px;
   /*el ancho del titulo*/
-  font-size: 30px;
+  font-size: 2rem;
   /*ancho de fuente*/ }
 
 .titulosecundario {
   margin-left: 150px;
   margin-right: 150px;
-  font-size: 18px;
+  font-size: 1rem;
   /*ancho de fuente*/ }
 
 body {

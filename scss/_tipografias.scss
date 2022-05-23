@@ -13,7 +13,7 @@
 {
     @extend .extend-formatosdetitulos;
     padding: 10px;/*el ancho del titulo*/
-    font-size: 30px; /*ancho de fuente*/ 
+    font-size: 2rem; /*ancho de fuente*/ 
 }
 
 .titulosecundario /*titulo secundario*/
@@ -21,7 +21,7 @@
     @extend .extend-formatosdetitulos;
     margin-left: 150px;
     margin-right: 150px;
-    font-size: 18px; /*ancho de fuente*/ 
+    font-size: 1rem; /*ancho de fuente*/ 
 }
 
 
