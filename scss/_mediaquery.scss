@@ -152,8 +152,9 @@
     /*-----BODY - SERVICIOS-----*/
     .bodygrid-servicio {  
         display: grid;
-        gap: 15px 15px;
         grid-area: bodygrid-servicio;
+        gap: 15px 15px;
+        width: 100%;
         grid-template-areas:
           "grid-navbar-servicio"
           "grid-main-servicio"
@@ -168,6 +169,7 @@
       /*-----MAIN - SERVICIOS-----*/
       .grid-main-servicio {  
         display: grid;
+        grid-area: grid-main-servicio;
         gap: 2% 3%;
         grid-template-areas:
           "box11-servicio"
@@ -175,8 +177,8 @@
           "box22-servicio"
           "box21-servicio"
           "box31-servicio"
-          "box32-servicio";
-        grid-area: grid-main-servicio;
+          "box32-servicio"
+          ;
         margin-top: 5%;
         margin-bottom: 5%;
       }

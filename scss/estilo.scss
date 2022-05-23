@@ -56,14 +56,14 @@ table /*tabla de plantilla de contenido*/
 
 th /*ttitulos de la tabla de plantilla de contenido*/
 {
-    font-size: 25px;/*tamaño de la fuente*/
+    font-size: 2rem;/*tamaño de la fuente*/
     background-color: rgb(228, 178, 72);/*cambia el fondo*/
 
 }
 
 td /*celdas de menor rango de la tabla de plantilla de contenido*/
 {
-    font-size: 20px;/*tamaño de la fuente*/
+    font-size: 1rem;/*tamaño de la fuente*/
     background-color: rgb(230, 212, 154);/*cambia el fondo*/
 
 }
@@ -121,4 +121,31 @@ background-color: antiquewhite;/*cambia el fondo*/
     text-align: center;/*texto centrado*/
     text-shadow: 3px 5px 5px grey; /*efecto difuminado*/
     
+}
+
+.texto5 /*tipo de texto 5*/
+{
+    color: rgb(255, 255, 255);/*color de letra*/
+    font-size: 30px;/*tamaño de la fuente*/
+    text-align: center;/*texto centrado*/
+    text-shadow: 3px 5px 5px grey; /*efecto difuminado*/
+    list-style-type: none; /*elimina los puntitos de las lsitas*/
+    
+}
+
+.clientesservicios
+{
+    border-style: solid; /*borde solido*/
+    border-color: white; /*color de borde*/
+    border-radius: 100px; /*redondear el borde*/
+    border-width: 1px; /*ancho de borde*/
+    text-align: center;/*central el texto*/
+    float: left;/*la imagen se va hacia la izquierda*/
+   
+}
+
+.boxcentrado/*contenedor centrado*/
+{
+    display: flex;
+    justify-content: center;  
 }

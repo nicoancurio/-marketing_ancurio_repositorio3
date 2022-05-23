@@ -212,7 +212,10 @@
 .bodyplanesgrid {
   display: grid;
   gap: 15px 15px;
-  grid-template-areas: "grid-navbar-planes grid-navbar-planes grid-navbar-planes grid-navbar-planes" "titulo-secundario titulo-secundario titulo-secundario titulo-secundario"  "textocentrado textocentrado textocentrado textocentrado " ". tabla tabla ." "texto3 texto3 texto3 texto3"; }
+  grid-template-areas: "grid-navbar-planes grid-navbar-planes grid-navbar-planes grid-navbar-planes" "titulo-secundario titulo-secundario titulo-secundario titulo-secundario"  "textocentrado textocentrado textocentrado textocentrado " ". tabla tabla ." "clientesMkt clientesMkt clientesMkt clientesMkt" "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; }
+
+.grid-navbar-planes {
+  grid-area: grid-navbar-planes; }
 
 .titulo-secundario {
   grid-area: titulo-secundario; }
@@ -221,6 +224,7 @@
   grid-area: textocentrado; }
 
 #tabla {
+  margin-left: 20px;
   grid-area: tabla;
   border-style: solid;
   /*borde solido*/
@@ -229,37 +233,10 @@
   border-width: 3px;
   /*ancho de borde*/ }
 
-.texto3 {
-  grid-area: texto3; }
-
-.grid-navbar-planes {
-  grid-area: grid-navbar-planes; }
-
-.bodyplanesgrid {
-  display: grid;
-  gap: 15px 15px;
-  grid-template-areas: "grid-navbar-planes grid-navbar-planes grid-navbar-planes grid-navbar-planes" "titulo-secundario titulo-secundario titulo-secundario titulo-secundario"  "textocentrado textocentrado textocentrado textocentrado " ". tabla tabla ." "texto3 texto3 texto3 texto3"; }
-
-.titulo-secundario {
-  grid-area: titulo-secundario; }
-
-.textocentrado {
-  grid-area: textocentrado; }
-
-#tabla {
-  grid-area: tabla;
-  border-style: solid;
-  /*borde solido*/
-  border-color: white;
-  /*color de borde*/
-  border-width: 3px;
-  /*ancho de borde*/ }
-
-.texto3 {
-  grid-area: texto3; }
-
-.grid-navbar-planes {
-  grid-area: grid-navbar-planes; }
+.clientesMkt {
+  grid-area: clientesMkt;
+  margin-top: 80px;
+  margin-bottom: 150px; }
 
 /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
 .bodynosotrosgrid {
@@ -439,8 +416,9 @@ body {
   /*-----BODY - SERVICIOS-----*/
   .bodygrid-servicio {
     display: grid;
-    gap: 15px 15px;
     grid-area: bodygrid-servicio;
+    gap: 15px 15px;
+    width: 100%;
     grid-template-areas: "grid-navbar-servicio" "grid-main-servicio" "grid-footer-index"; }
   /*-----NAVBAR - SERVICIOS-----*/
   .grid-navbar-servicio {
@@ -448,9 +426,9 @@ body {
   /*-----MAIN - SERVICIOS-----*/
   .grid-main-servicio {
     display: grid;
+    grid-area: grid-main-servicio;
     gap: 2% 3%;
     grid-template-areas: "box11-servicio" "box12-servicio" "box22-servicio" "box21-servicio" "box31-servicio" "box32-servicio";
-    grid-area: grid-main-servicio;
     margin-top: 5%;
     margin-bottom: 5%; }
   /*-----BOX 1 - SERVICIOS-----*/
@@ -523,13 +501,13 @@ table {
   text-align: center; }
 
 th {
-  font-size: 25px;
+  font-size: 2rem;
   /*tamaño de la fuente*/
   background-color: #e4b248;
   /*cambia el fondo*/ }
 
 td {
-  font-size: 20px;
+  font-size: 1rem;
   /*tamaño de la fuente*/
   background-color: #e6d49a;
   /*cambia el fondo*/ }
@@ -581,3 +559,33 @@ fieldset {
   /*texto centrado*/
   text-shadow: 3px 5px 5px grey;
   /*efecto difuminado*/ }
+
+.texto5 {
+  color: white;
+  /*color de letra*/
+  font-size: 30px;
+  /*tamaño de la fuente*/
+  text-align: center;
+  /*texto centrado*/
+  text-shadow: 3px 5px 5px grey;
+  /*efecto difuminado*/
+  list-style-type: none;
+  /*elimina los puntitos de las lsitas*/ }
+
+.clientesservicios {
+  border-style: solid;
+  /*borde solido*/
+  border-color: white;
+  /*color de borde*/
+  border-radius: 100px;
+  /*redondear el borde*/
+  border-width: 1px;
+  /*ancho de borde*/
+  text-align: center;
+  /*central el texto*/
+  float: left;
+  /*la imagen se va hacia la izquierda*/ }
+
+.boxcentrado {
+  display: flex;
+  justify-content: center; }
