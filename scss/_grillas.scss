@@ -335,7 +335,7 @@
   ". box1-nosotros box1-nosotros  ."
   ". box2-nosotros box2-nosotros  ."
   ". box3-nosotros box3-nosotros  ."
-  "texto3 texto3 texto3 texto3"; 
+  "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; 
 }
 
 
@@ -359,10 +359,7 @@
     grid-area: box3-nosotros; 
 }
 
-.texto3
-{ 
-  grid-area: texto3;
-}
+
 /*-----------------------------------GRID DE PAGINA DE CONTACTO--------------------------------------------------------------*/
 .bodycontactogrid 
 { 
