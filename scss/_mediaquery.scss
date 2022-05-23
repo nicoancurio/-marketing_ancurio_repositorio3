@@ -1,0 +1,221 @@
+/*-----------------------------------MEDIA QUERY---------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .bodygrid-index
+    {  
+       display: grid;
+       grid-area: bodygrid-index;
+       gap: 10px 10px;
+    
+       grid-template-areas:
+         "grid-navbar-index"
+         "grid-main-index"
+         "grid-footer-index";
+     }
+     
+  
+     
+     .grid-main-index 
+     { 
+       display: grid;
+       grid-area: grid-main-index;
+       margin-top: 15px;
+       gap: 10px 10px;
+    
+       grid-template-areas:
+         "marketing-index "
+         "boxcentral2-index"
+         "box1-index"
+         "boxcentral3-index"
+         "boxcentral4-index";
+     }
+  
+     .marketing-index
+   { 
+      grid-area: marketing-index;
+      background-image: url("https://img.freepik.com/foto-gratis/hombre-caucasico-trabajo-lanzamiento_53876-30174.jpg?t=st=1651012463~exp=1651013063~hmac=948459098cdbee8464da10370c2076cec5c4761d9c6c97d4f09ae05203d351e3&w=1380" );
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.95;
+      padding: 0px;
+      width: 100%;
+      
+  
+      
+  }
+     .box1-index 
+     { 
+       display: none;
+     }
+     
+     .box2-index 
+     { 
+      display: none;
+     }
+     
+     .box3-index 
+     { 
+      display: none;
+     }
+     
+     .box4-index 
+     { 
+      display: none;
+     }
+     
+  
+    /*FOOTER - INDEX -MEDIA QUERY*/
+   .grid-footer-index 
+   { 
+       display: grid;
+       grid-area: grid-footer-index; 
+       background-color: rgba(250, 235, 215, 0.875);
+       padding: 20px;
+       justify-items: center;
+       grid-template-areas:
+       "logosAplicaciones-index"
+       ;
+  
+   }
+  
+   /*FOOTER - INDEX - LOGOS DE APLICACIONES*/
+   .logosAplicaciones-index 
+   { 
+    display: grid;
+    grid-area: logosAplicaciones-index; 
+    grid-template-columns: 0.1fr 0.9fr;
+    align-items: center;
+    justify-items: center;
+    
+  
+    grid-template-areas:
+       "imagenlogosAplicaciones1-index  textologosAplicaciones1-index "
+       "imagenlogosAplicaciones2-index  textologosAplicaciones2-index "
+       "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "
+       ;
+   }
+  
+   .imagenlogosAplicaciones1-index
+   { 
+     grid-area: imagenlogosAplicaciones1-index ;
+   }
+  
+   .imagenlogosAplicaciones2-index
+   { 
+     grid-area: imagenlogosAplicaciones2-index ;
+   }
+  
+   .imagenlogosAplicaciones3-index
+   { 
+     grid-area: imagenlogosAplicaciones3-index ;
+     
+   }
+  
+   .textologosAplicaciones1-index
+   { 
+     grid-area: textologosAplicaciones1-index ;
+   
+   }
+   
+   .textologosAplicaciones2-index
+   { 
+     grid-area: textologosAplicaciones2-index ;
+     text-align: center;
+   }
+   
+   .textologosAplicaciones3-index
+   { 
+     grid-area: textologosAplicaciones3-index ;
+     text-align: center;
+   }
+  
+    /*FOOTER - INDEX - LOGOS DE MKT*/
+   .siAllMarketing-Index{ 
+    grid-area: siAllMarketing-Index ;
+    text-align: center;
+    margin-top: 3rem;
+    
+  }
+  
+   /*FOOTER - INDEX - INFORMACION*/
+   .textoFooter-index 
+   { 
+    display: none;
+   }
+  
+   .siAllMarketing-Index
+   { 
+      display: none;
+  }
+  
+  /*-----------------------------------GRID DE PAGINA DE SERVICIO--------------------------------------------------------------*/
+
+    /*-----BODY - SERVICIOS-----*/
+    .bodygrid-servicio {  
+        display: grid;
+        gap: 15px 15px;
+        grid-area: bodygrid-servicio;
+        grid-template-areas:
+          "grid-navbar-servicio"
+          "grid-main-servicio"
+          "grid-footer-index";
+      }
+      
+      /*-----NAVBAR - SERVICIOS-----*/
+      .grid-navbar-servicio { 
+        grid-area: grid-navbar-servicio; 
+      }
+      
+      /*-----MAIN - SERVICIOS-----*/
+      .grid-main-servicio {  
+        display: grid;
+        gap: 2% 3%;
+        grid-template-areas:
+          "box11-servicio"
+          "box12-servicio"
+          "box22-servicio"
+          "box21-servicio"
+          "box31-servicio"
+          "box32-servicio";
+        grid-area: grid-main-servicio;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      
+      /*-----BOX 1 - SERVICIOS-----*/
+      .box11-servicio { 
+        grid-area: box11-servicio; 
+        text-align: center;
+      }
+      
+      .box12-servicio { 
+        grid-area: box12-servicio;
+        text-align: center; 
+      }
+      
+      /*-----BOX 2 - SERVICIOS-----*/
+      .box21-servicio { 
+        grid-area: box21-servicio; 
+        text-align: center;
+      }
+      
+      .box22-servicio { 
+        grid-area: box22-servicio; 
+        text-align: center;
+      }
+  
+    
+    /*-----BOX 3 - SERVICIOS-----*/  
+      .box31-servicio { 
+        grid-area: box31-servicio; 
+        text-align: center;
+      }
+      
+      .box32-servicio { 
+        grid-area: box32-servicio; 
+        text-align: center;
+      }
+      
+     
+      
+
+  }

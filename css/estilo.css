@@ -157,12 +157,12 @@
   padding: 20px; }
 
 /*-----------------------------------GRID DE PAGINA DE SERVICIO--------------------------------------------------------------*/
-/*-----------------prueba--------------------------*/
 /*-----BODY - SERVICIOS-----*/
-.bodygrip-servicio {
+.bodygrid-servicio {
   display: grid;
+  grid-area: bodygrid-servicio;
   gap: 15px 15px;
-  grid-template-areas: "grid-navbar-servicio grid-navbar-servicio grid-navbar-servicio" ". grid-main-servicio ." "grid-footer-servicio grid-footer-servicio grid-footer-servicio"; }
+  grid-template-areas: "grid-navbar-servicio grid-navbar-servicio grid-navbar-servicio" ". grid-main-servicio ." "grid-footer-index grid-footer-index grid-footer-index"; }
 
 /*-----NAVBAR - SERVICIOS-----*/
 .grid-navbar-servicio {
@@ -308,6 +308,64 @@
 .texto3 {
   grid-area: texto3; }
 
+.extend-formatosdetitulos, .titulo, .titulosecundario {
+  text-align: center;
+  /*central el texto*/
+  text-shadow: 3px 5px 5px grey;
+  /*efecto difuminado*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*fuente de texto*/
+  color: white;
+  /*color del titulo*/ }
+
+.titulo {
+  padding: 10px;
+  /*el ancho del titulo*/
+  font-size: 2rem;
+  /*ancho de fuente*/ }
+
+.titulosecundario {
+  font-size: 1rem;
+  /*ancho de fuente*/
+  padding: 10px;
+  /*el ancho del titulo*/ }
+
+body {
+  background-color: #eeddd2; }
+
+.imagencuadrada {
+  width: 250px;
+  /*ancho*/
+  height: 270px;
+  /*alto*/
+  border-style: solid;
+  /*borde solido*/
+  border-color: white;
+  /*color de borde*/
+  border-radius: 30px;
+  /*redondear el borde*/
+  border-width: 4px;
+  /*ancho de borde*/ }
+
+.logofooter {
+  margin-left: 20px;
+  border-style: none;
+  /*sin borde*/
+  text-align: center;
+  /*central el texto*/
+  float: left;
+  /*la imagen se va hacia la izquierda*/ }
+
+.logonavbar {
+  border-style: solid;
+  /*borde solido*/
+  border-color: white;
+  /*color de borde*/
+  border-radius: 100px;
+  /*redondear el borde*/
+  border-width: 2px;
+  /*ancho de borde*/ }
+
 /*-----------------------------------MEDIA QUERY---------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .bodygrid-index {
@@ -376,65 +434,46 @@
   .textoFooter-index {
     display: none; }
   .siAllMarketing-Index {
-    display: none; } }
-
-.extend-formatosdetitulos, .titulo, .titulosecundario {
-  text-align: center;
-  /*central el texto*/
-  text-shadow: 3px 5px 5px grey;
-  /*efecto difuminado*/
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*fuente de texto*/
-  color: white;
-  /*color del titulo*/ }
-
-.titulo {
-  padding: 10px;
-  /*el ancho del titulo*/
-  font-size: 2rem;
-  /*ancho de fuente*/ }
-
-.titulosecundario {
-  font-size: 1rem;
-  /*ancho de fuente*/
-  padding: 10px;
-  /*el ancho del titulo*/ }
-
-body {
-  background-color: #eeddd2; }
-
-.imagencuadrada {
-  width: 250px;
-  /*ancho*/
-  height: 270px;
-  /*alto*/
-  border-style: solid;
-  /*borde solido*/
-  border-color: white;
-  /*color de borde*/
-  border-radius: 30px;
-  /*redondear el borde*/
-  border-width: 4px;
-  /*ancho de borde*/ }
-
-.logofooter {
-  margin-left: 20px;
-  border-style: none;
-  /*sin borde*/
-  text-align: center;
-  /*central el texto*/
-  float: left;
-  /*la imagen se va hacia la izquierda*/ }
-
-.logonavbar {
-  border-style: solid;
-  /*borde solido*/
-  border-color: white;
-  /*color de borde*/
-  border-radius: 100px;
-  /*redondear el borde*/
-  border-width: 2px;
-  /*ancho de borde*/ }
+    display: none; }
+  /*-----------------------------------GRID DE PAGINA DE SERVICIO--------------------------------------------------------------*/
+  /*-----BODY - SERVICIOS-----*/
+  .bodygrid-servicio {
+    display: grid;
+    gap: 15px 15px;
+    grid-area: bodygrid-servicio;
+    grid-template-areas: "grid-navbar-servicio" "grid-main-servicio" "grid-footer-index"; }
+  /*-----NAVBAR - SERVICIOS-----*/
+  .grid-navbar-servicio {
+    grid-area: grid-navbar-servicio; }
+  /*-----MAIN - SERVICIOS-----*/
+  .grid-main-servicio {
+    display: grid;
+    gap: 2% 3%;
+    grid-template-areas: "box11-servicio" "box12-servicio" "box22-servicio" "box21-servicio" "box31-servicio" "box32-servicio";
+    grid-area: grid-main-servicio;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  /*-----BOX 1 - SERVICIOS-----*/
+  .box11-servicio {
+    grid-area: box11-servicio;
+    text-align: center; }
+  .box12-servicio {
+    grid-area: box12-servicio;
+    text-align: center; }
+  /*-----BOX 2 - SERVICIOS-----*/
+  .box21-servicio {
+    grid-area: box21-servicio;
+    text-align: center; }
+  .box22-servicio {
+    grid-area: box22-servicio;
+    text-align: center; }
+  /*-----BOX 3 - SERVICIOS-----*/
+  .box31-servicio {
+    grid-area: box31-servicio;
+    text-align: center; }
+  .box32-servicio {
+    grid-area: box32-servicio;
+    text-align: center; } }
 
 h1 {
   color: red; }

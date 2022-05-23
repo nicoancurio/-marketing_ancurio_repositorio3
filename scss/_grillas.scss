@@ -204,17 +204,16 @@
 
  /*-----------------------------------GRID DE PAGINA DE SERVICIO--------------------------------------------------------------*/
 
-  
-    /*-----------------prueba--------------------------*/
 
     /*-----BODY - SERVICIOS-----*/
-    .bodygrip-servicio {  
+    .bodygrid-servicio {  
       display: grid;
+      grid-area: bodygrid-servicio;
       gap: 15px 15px;
       grid-template-areas:
         "grid-navbar-servicio grid-navbar-servicio grid-navbar-servicio"
         ". grid-main-servicio ."
-        "grid-footer-servicio grid-footer-servicio grid-footer-servicio";
+        "grid-footer-index grid-footer-index grid-footer-index";
     }
     
     /*-----NAVBAR - SERVICIOS-----*/
@@ -437,155 +436,4 @@
 .texto3
 { 
   grid-area: texto3;
-}
-/*-----------------------------------MEDIA QUERY---------------------------------------------------------------------- */
-@media (max-width: 768px) {
-  .bodygrid-index
-  {  
-     display: grid;
-     grid-area: bodygrid-index;
-     gap: 10px 10px;
-  
-     grid-template-areas:
-       "grid-navbar-index"
-       "grid-main-index"
-       "grid-footer-index";
-   }
-   
-
-   
-   .grid-main-index 
-   { 
-     display: grid;
-     grid-area: grid-main-index;
-     margin-top: 15px;
-     gap: 10px 10px;
-  
-     grid-template-areas:
-       "marketing-index "
-       "boxcentral2-index"
-       "box1-index"
-       "boxcentral3-index"
-       "boxcentral4-index";
-   }
-
-   .marketing-index
- { 
-    grid-area: marketing-index;
-    background-image: url("https://img.freepik.com/foto-gratis/hombre-caucasico-trabajo-lanzamiento_53876-30174.jpg?t=st=1651012463~exp=1651013063~hmac=948459098cdbee8464da10370c2076cec5c4761d9c6c97d4f09ae05203d351e3&w=1380" );
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.95;
-    padding: 0px;
-    width: 100%;
-    
-
-    
-}
-   .box1-index 
-   { 
-     display: none;
-   }
-   
-   .box2-index 
-   { 
-    display: none;
-   }
-   
-   .box3-index 
-   { 
-    display: none;
-   }
-   
-   .box4-index 
-   { 
-    display: none;
-   }
-   
-
-  /*FOOTER - INDEX -MEDIA QUERY*/
- .grid-footer-index 
- { 
-     display: grid;
-     grid-area: grid-footer-index; 
-     background-color: rgba(250, 235, 215, 0.875);
-     padding: 20px;
-     justify-items: center;
-     grid-template-areas:
-     "logosAplicaciones-index"
-     ;
-
- }
-
- /*FOOTER - INDEX - LOGOS DE APLICACIONES*/
- .logosAplicaciones-index 
- { 
-  display: grid;
-  grid-area: logosAplicaciones-index; 
-  grid-template-columns: 0.1fr 0.9fr;
-  align-items: center;
-  justify-items: center;
-  
-
-  grid-template-areas:
-     "imagenlogosAplicaciones1-index  textologosAplicaciones1-index "
-     "imagenlogosAplicaciones2-index  textologosAplicaciones2-index "
-     "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "
-     ;
- }
-
- .imagenlogosAplicaciones1-index
- { 
-   grid-area: imagenlogosAplicaciones1-index ;
- }
-
- .imagenlogosAplicaciones2-index
- { 
-   grid-area: imagenlogosAplicaciones2-index ;
- }
-
- .imagenlogosAplicaciones3-index
- { 
-   grid-area: imagenlogosAplicaciones3-index ;
-   
- }
-
- .textologosAplicaciones1-index
- { 
-   grid-area: textologosAplicaciones1-index ;
- 
- }
- 
- .textologosAplicaciones2-index
- { 
-   grid-area: textologosAplicaciones2-index ;
-   text-align: center;
- }
- 
- .textologosAplicaciones3-index
- { 
-   grid-area: textologosAplicaciones3-index ;
-   text-align: center;
- }
-
-  /*FOOTER - INDEX - LOGOS DE MKT*/
- .siAllMarketing-Index{ 
-  grid-area: siAllMarketing-Index ;
-  text-align: center;
-  margin-top: 3rem;
-  
-}
-
- /*FOOTER - INDEX - INFORMACION*/
- .textoFooter-index 
- { 
-  display: none;
- }
-
- .siAllMarketing-Index
- { 
-    display: none;
-}
-
-
 }
