@@ -38,6 +38,7 @@
      "boxcentral4-index boxcentral4-index boxcentral4-index boxcentral4-index";
  }
 
+ /*FOOTER - INDEX*/
  .grid-footer-index 
  { 
      display: grid;
@@ -49,6 +50,8 @@
      ;
 
  }
+
+ /*FOOTER - INDEX - LOGOS DE APLICACIONES*/
  .logosAplicaciones-index 
  { 
   display: grid;
@@ -63,13 +66,6 @@
      "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "
      ;
  }
-
- .siAllMarketing-Index{ 
-  grid-area: siAllMarketing-Index ;
-  text-align: center;
-  margin-top: 3rem;
-  
-}
 
  .imagenlogosAplicaciones1-index
  { 
@@ -105,13 +101,21 @@
    text-align: center;
  }
 
+  /*FOOTER - INDEX - LOGOS DE MKT*/
+ .siAllMarketing-Index{ 
+  grid-area: siAllMarketing-Index ;
+  text-align: center;
+  margin-top: 3rem;
+  
+}
 
+ /*FOOTER - INDEX - INFORMACION*/
  .textoFooter-index 
  { 
    grid-area: textoFooter-index ;
  }
 
- 
+  /*MARKETING - INDEX*/
  .marketing-index
  { 
     grid-area: marketing-index;
@@ -120,17 +124,14 @@
     background-position: center;
     opacity: 0.95;
     padding: 300px;
-    width: 100%;
-    
-
-    
+    width: 100%;  
 }
 
+ /*BOX1,2,3 Y 4 - INDEX*/
 .extend-dentrodelbox
 { 
   text-align: center;
-  border-style: none; /*no borde */
-  
+  border-style: none; 
 }
 
  .box1-index 
@@ -157,7 +158,7 @@
    @extend .extend-dentrodelbox;
  }
 
-
+ /*BOX CENTRAL 2,3 Y 4 - INDEX*/
   .boxcentral2-index
   { 
     grid-area: boxcentral2-index;
@@ -170,6 +171,7 @@
     border-width: 6px; /*ancho de borde*/
     margin: 20px;
     padding: 20px;
+    justify-items: center;
   }
  
  .boxcentral3-index
@@ -501,8 +503,88 @@
    }
    
 
-   #footer { 
-    flex-direction: column;
-   }
+  /*FOOTER - INDEX -MEDIA QUERY*/
+ .grid-footer-index 
+ { 
+     display: grid;
+     grid-area: grid-footer-index; 
+     background-color: rgba(250, 235, 215, 0.875);
+     padding: 20px;
+     grid-template-areas:
+     "logosAplicaciones-index"
+     ;
+
+ }
+
+ /*FOOTER - INDEX - LOGOS DE APLICACIONES*/
+ .logosAplicaciones-index 
+ { 
+  display: grid;
+  grid-area: logosAplicaciones-index; 
+  grid-template-columns: 0.1fr 0.9fr;
+  align-items: center;
+  justify-items: center;
+  
+
+  grid-template-areas:
+     "imagenlogosAplicaciones1-index  textologosAplicaciones1-index "
+     "imagenlogosAplicaciones2-index  textologosAplicaciones2-index "
+     "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "
+     ;
+ }
+
+ .imagenlogosAplicaciones1-index
+ { 
+   grid-area: imagenlogosAplicaciones1-index ;
+ }
+
+ .imagenlogosAplicaciones2-index
+ { 
+   grid-area: imagenlogosAplicaciones2-index ;
+ }
+
+ .imagenlogosAplicaciones3-index
+ { 
+   grid-area: imagenlogosAplicaciones3-index ;
+   
+ }
+
+ .textologosAplicaciones1-index
+ { 
+   grid-area: textologosAplicaciones1-index ;
+ 
+ }
+ 
+ .textologosAplicaciones2-index
+ { 
+   grid-area: textologosAplicaciones2-index ;
+   text-align: center;
+ }
+ 
+ .textologosAplicaciones3-index
+ { 
+   grid-area: textologosAplicaciones3-index ;
+   text-align: center;
+ }
+
+  /*FOOTER - INDEX - LOGOS DE MKT*/
+ .siAllMarketing-Index{ 
+  grid-area: siAllMarketing-Index ;
+  text-align: center;
+  margin-top: 3rem;
+  
+}
+
+ /*FOOTER - INDEX - INFORMACION*/
+ .textoFooter-index 
+ { 
+  display: none;
+ }
+
+ .siAllMarketing-Index
+ { 
+    display: none;
+}
+
 
 }

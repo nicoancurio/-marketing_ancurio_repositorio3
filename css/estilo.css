@@ -23,6 +23,7 @@
   gap: 10px 10px;
   grid-template-areas: "marketing-index marketing-index marketing-index marketing-index" "box1-index box2-index box3-index box4-index" "boxcentral2-index boxcentral2-index boxcentral2-index boxcentral2-index" "boxcentral3-index boxcentral3-index boxcentral3-index boxcentral3-index" "boxcentral4-index boxcentral4-index boxcentral4-index boxcentral4-index"; }
 
+/*FOOTER - INDEX*/
 .grid-footer-index {
   display: grid;
   grid-area: grid-footer-index;
@@ -30,6 +31,7 @@
   padding: 20px;
   grid-template-areas: "logosAplicaciones-index  siAllMarketing-Index textoFooter-index"; }
 
+/*FOOTER - INDEX - LOGOS DE APLICACIONES*/
 .logosAplicaciones-index {
   display: grid;
   grid-area: logosAplicaciones-index;
@@ -37,11 +39,6 @@
   align-items: center;
   justify-items: start;
   grid-template-areas: "imagenlogosAplicaciones1-index  textologosAplicaciones1-index " "imagenlogosAplicaciones2-index  textologosAplicaciones2-index " "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "; }
-
-.siAllMarketing-Index {
-  grid-area: siAllMarketing-Index;
-  text-align: center;
-  margin-top: 3rem; }
 
 .imagenlogosAplicaciones1-index {
   grid-area: imagenlogosAplicaciones1-index; }
@@ -63,9 +60,17 @@
   grid-area: textologosAplicaciones3-index;
   text-align: center; }
 
+/*FOOTER - INDEX - LOGOS DE MKT*/
+.siAllMarketing-Index {
+  grid-area: siAllMarketing-Index;
+  text-align: center;
+  margin-top: 3rem; }
+
+/*FOOTER - INDEX - INFORMACION*/
 .textoFooter-index {
   grid-area: textoFooter-index; }
 
+/*MARKETING - INDEX*/
 .marketing-index {
   grid-area: marketing-index;
   background-image: url("https://img.freepik.com/foto-gratis/hombre-caucasico-trabajo-lanzamiento_53876-30174.jpg?t=st=1651012463~exp=1651013063~hmac=948459098cdbee8464da10370c2076cec5c4761d9c6c97d4f09ae05203d351e3&w=1380");
@@ -75,10 +80,10 @@
   padding: 300px;
   width: 100%; }
 
+/*BOX1,2,3 Y 4 - INDEX*/
 .extend-dentrodelbox, .box1-index, .box2-index, .box3-index, .box4-index {
   text-align: center;
-  border-style: none;
-  /*no borde */ }
+  border-style: none; }
 
 .box1-index {
   grid-area: box1-index; }
@@ -92,6 +97,7 @@
 .box4-index {
   grid-area: box4-index; }
 
+/*BOX CENTRAL 2,3 Y 4 - INDEX*/
 .boxcentral2-index {
   grid-area: boxcentral2-index;
   color: #c9a40e;
@@ -109,7 +115,8 @@
   border-width: 6px;
   /*ancho de borde*/
   margin: 20px;
-  padding: 20px; }
+  padding: 20px;
+  justify-items: center; }
 
 .boxcentral3-index {
   grid-area: boxcentral3-index;
@@ -330,8 +337,45 @@
     display: none; }
   .box4-index {
     display: none; }
-  #footer {
-    flex-direction: column; } }
+  /*FOOTER - INDEX -MEDIA QUERY*/
+  .grid-footer-index {
+    display: grid;
+    grid-area: grid-footer-index;
+    background-color: rgba(250, 235, 215, 0.875);
+    padding: 20px;
+    grid-template-areas: "logosAplicaciones-index"; }
+  /*FOOTER - INDEX - LOGOS DE APLICACIONES*/
+  .logosAplicaciones-index {
+    display: grid;
+    grid-area: logosAplicaciones-index;
+    grid-template-columns: 0.1fr 0.9fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "imagenlogosAplicaciones1-index  textologosAplicaciones1-index " "imagenlogosAplicaciones2-index  textologosAplicaciones2-index " "imagenlogosAplicaciones3-index  textologosAplicaciones3-index "; }
+  .imagenlogosAplicaciones1-index {
+    grid-area: imagenlogosAplicaciones1-index; }
+  .imagenlogosAplicaciones2-index {
+    grid-area: imagenlogosAplicaciones2-index; }
+  .imagenlogosAplicaciones3-index {
+    grid-area: imagenlogosAplicaciones3-index; }
+  .textologosAplicaciones1-index {
+    grid-area: textologosAplicaciones1-index; }
+  .textologosAplicaciones2-index {
+    grid-area: textologosAplicaciones2-index;
+    text-align: center; }
+  .textologosAplicaciones3-index {
+    grid-area: textologosAplicaciones3-index;
+    text-align: center; }
+  /*FOOTER - INDEX - LOGOS DE MKT*/
+  .siAllMarketing-Index {
+    grid-area: siAllMarketing-Index;
+    text-align: center;
+    margin-top: 3rem; }
+  /*FOOTER - INDEX - INFORMACION*/
+  .textoFooter-index {
+    display: none; }
+  .siAllMarketing-Index {
+    display: none; } }
 
 .extend-formatosdetitulos, .titulo, .titulosecundario {
   text-align: center;
