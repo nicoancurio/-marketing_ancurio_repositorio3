@@ -343,6 +343,7 @@
     grid-area: grid-footer-index;
     background-color: rgba(250, 235, 215, 0.875);
     padding: 20px;
+    justify-items: center;
     grid-template-areas: "logosAplicaciones-index"; }
   /*FOOTER - INDEX - LOGOS DE APLICACIONES*/
   .logosAplicaciones-index {
