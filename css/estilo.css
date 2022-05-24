@@ -180,7 +180,8 @@
 /*-----BOX 1 - SERVICIOS-----*/
 .box11-servicio {
   grid-area: box11-servicio;
-  text-align: center; }
+  text-align: center;
+  margin-top: 120px; }
 
 .box12-servicio {
   grid-area: box12-servicio;
@@ -193,12 +194,14 @@
 
 .box22-servicio {
   grid-area: box22-servicio;
-  text-align: center; }
+  text-align: center;
+  margin-top: 200px; }
 
 /*-----BOX 3 - SERVICIOS-----*/
 .box31-servicio {
   grid-area: box31-servicio;
-  text-align: center; }
+  text-align: center;
+  margin-top: 170px; }
 
 .box32-servicio {
   grid-area: box32-servicio;
