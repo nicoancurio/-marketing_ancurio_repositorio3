@@ -225,7 +225,7 @@
   grid-area: textocentrado; }
 
 #tabla {
-  margin-left: 20px;
+  margin-left: 10%;
   grid-area: tabla;
   border-style: solid;
   /*borde solido*/
@@ -457,6 +457,7 @@ body {
   .box32-servicio {
     grid-area: box32-servicio;
     text-align: center; }
+  /*-----------------------------------GRID DE PAGINA DE PLAN DE CONTENIDO-----------------------------------------------------*/
   /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
   .bodynosotrosgrid {
     display: grid;
@@ -512,7 +513,7 @@ table {
   text-align: center; }
 
 th {
-  font-size: 2rem;
+  font-size: 1.5rem;
   /*tamaño de la fuente*/
   background-color: #e4b248;
   /*cambia el fondo*/ }
