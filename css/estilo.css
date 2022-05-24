@@ -497,7 +497,7 @@ h2 {
 .textocentrado {
   color: white;
   /*color de letra*/
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   /*tamaño de la fuente*/
   text-align: center;
   /*central el texto*/
@@ -564,7 +564,7 @@ fieldset {
 .texto4 {
   color: white;
   /*color de letra*/
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   /*tamaño de la fuente*/
   text-align: center;
   /*texto centrado*/
