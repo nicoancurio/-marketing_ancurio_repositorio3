@@ -217,7 +217,23 @@
         text-align: center;
       }
       
-     
+     /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
+      .bodynosotrosgrid 
+      { 
+        display: grid;
+        grid-area: bodynosotrosgrid ; 
+        gap: 15px 15px;
+        grid-template-areas: 
+      
+        "grid-navbar-nosotros"
+        "box1-nosotros"
+        "box2-nosotros"
+        "box3-nosotros"
+        "grid-footer-index"; 
+      
+        
+      }
+      
       
 
   }

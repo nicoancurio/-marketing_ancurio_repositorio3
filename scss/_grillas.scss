@@ -299,6 +299,7 @@
 .titulo-secundario
 { 
   grid-area: titulo-secundario;
+  width: 80%;
 }
 
 .textocentrado
@@ -328,6 +329,7 @@
 .bodynosotrosgrid 
 { 
   display: grid;
+  grid-area: bodynosotrosgrid ; 
   gap: 15px 15px;
   grid-template-areas: 
 
@@ -347,16 +349,22 @@
 .box1-nosotros 
 { 
     grid-area: box1-nosotros; 
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .box2-nosotros 
 { 
     grid-area: box2-nosotros; 
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .box3-nosotros 
 { 
     grid-area: box3-nosotros; 
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 

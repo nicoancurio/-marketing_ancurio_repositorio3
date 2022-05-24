@@ -218,7 +218,8 @@
   grid-area: grid-navbar-planes; }
 
 .titulo-secundario {
-  grid-area: titulo-secundario; }
+  grid-area: titulo-secundario;
+  width: 80%; }
 
 .textocentrado {
   grid-area: textocentrado; }
@@ -241,6 +242,7 @@
 /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
 .bodynosotrosgrid {
   display: grid;
+  grid-area: bodynosotrosgrid;
   gap: 15px 15px;
   grid-template-areas: "grid-navbar-nosotros grid-navbar-nosotros grid-navbar-nosotros grid-navbar-nosotros" ". box1-nosotros box1-nosotros  ." ". box2-nosotros box2-nosotros  ." ". box3-nosotros box3-nosotros  ." "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; }
 
@@ -248,13 +250,19 @@
   grid-area: grid-navbar-nosotros; }
 
 .box1-nosotros {
-  grid-area: box1-nosotros; }
+  grid-area: box1-nosotros;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 .box2-nosotros {
-  grid-area: box2-nosotros; }
+  grid-area: box2-nosotros;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 .box3-nosotros {
-  grid-area: box3-nosotros; }
+  grid-area: box3-nosotros;
+  padding-left: 15%;
+  padding-right: 15%; }
 
 /*-----------------------------------GRID DE PAGINA DE CONTACTO--------------------------------------------------------------*/
 .bodycontactogrid {
@@ -448,7 +456,13 @@ body {
     text-align: center; }
   .box32-servicio {
     grid-area: box32-servicio;
-    text-align: center; } }
+    text-align: center; }
+  /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
+  .bodynosotrosgrid {
+    display: grid;
+    grid-area: bodynosotrosgrid;
+    gap: 15px 15px;
+    grid-template-areas: "grid-navbar-nosotros" "box1-nosotros" "box2-nosotros" "box3-nosotros" "grid-footer-index"; } }
 
 h1 {
   color: red; }
