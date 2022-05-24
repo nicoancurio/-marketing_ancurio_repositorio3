@@ -268,7 +268,7 @@
 .bodycontactogrid {
   display: grid;
   gap: 15px 15px;
-  grid-template-areas: "grid-navbar-contacto grid-navbar-contacto grid-navbar-contacto grid-navbar-contacto" ". box1-contacto box1-contacto  ." ". box2-contacto box2-contacto  ." "texto3 texto3 texto3 texto3"; }
+  grid-template-areas: "grid-navbar-contacto grid-navbar-contacto grid-navbar-contacto grid-navbar-contacto" ". box1-contacto box1-contacto  ." ". box2-contacto box2-contacto  ." "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; }
 
 .grid-navbar-contacto {
   grid-area: grid-navbar-contacto; }
@@ -285,10 +285,9 @@
   border-radius: 20px;
   /*redondear el borde*/
   border-width: 4px;
-  /*ancho de borde*/ }
-
-.texto3 {
-  grid-area: texto3; }
+  /*ancho de borde*/
+  padding: 1rem;
+  margin: 1rem; }
 
 .extend-formatosdetitulos, .titulo, .titulosecundario {
   text-align: center;

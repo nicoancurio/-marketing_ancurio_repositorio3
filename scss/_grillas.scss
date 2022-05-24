@@ -378,7 +378,7 @@
   "grid-navbar-contacto grid-navbar-contacto grid-navbar-contacto grid-navbar-contacto"
   ". box1-contacto box1-contacto  ."
   ". box2-contacto box2-contacto  ."
-  "texto3 texto3 texto3 texto3"; 
+  "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; 
 }
 
 
@@ -390,6 +390,7 @@
 .box1-contacto 
 { 
     grid-area: box1-contacto; 
+    
 }
 
 .box2-contacto 
@@ -399,10 +400,9 @@
     border-color: white; /*color de borde*/
     border-radius: 20px; /*redondear el borde*/
     border-width: 4px; /*ancho de borde*/
+    padding: 1rem;
+    margin: 1rem;
     
 }
 
-.texto3
-{ 
-  grid-area: texto3;
-}
+
