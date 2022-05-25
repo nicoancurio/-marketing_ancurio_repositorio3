@@ -235,9 +235,9 @@
 .textocentrado {
   grid-area: textocentrado; }
 
-#tabla {
+.tabla {
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 30%;
   grid-area: tabla;
   border-style: solid;
   /*borde solido*/
@@ -478,6 +478,17 @@ body {
     grid-area: box32-servicio;
     text-align: center; }
   /*-----------------------------------GRID DE PAGINA DE PLAN DE CONTENIDO-----------------------------------------------------*/
+  .tabla {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50px;
+    grid-area: tabla;
+    border-style: solid;
+    /*borde solido*/
+    border-color: white;
+    /*color de borde*/
+    border-width: 3px;
+    /*ancho de borde*/ }
   /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
   .bodynosotrosgrid {
     display: grid;

@@ -220,7 +220,16 @@
 
      /*-----------------------------------GRID DE PAGINA DE PLAN DE CONTENIDO-----------------------------------------------------*/
 
-  
+     .tabla 
+     { 
+       margin-left: 25%;
+       margin-right: 25%;
+       width: 50px;
+       grid-area: tabla;
+       border-style: solid; /*borde solido*/
+       border-color: white; /*color de borde*/
+       border-width: 3px; /*ancho de borde*/   
+     }
 
      /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
       .bodynosotrosgrid 
