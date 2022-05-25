@@ -219,7 +219,7 @@
 .bodyplanesgrid {
   display: grid;
   gap: 15px 15px;
-  grid-template-areas: "grid-navbar-planes grid-navbar-planes grid-navbar-planes grid-navbar-planes" "titulo-secundario titulo-secundario titulo-secundario titulo-secundario"  "textocentrado textocentrado textocentrado textocentrado " ". tabla tabla ." "clientesMkt clientesMkt clientesMkt clientesMkt" "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; }
+  grid-template-areas: "grid-navbar-planes grid-navbar-planes grid-navbar-planes grid-navbar-planes" "titulo-secundario titulo-secundario titulo-secundario titulo-secundario"  " membrecia membrecia membrecia membrecia" ". tabla tabla ." "clientesMkt clientesMkt clientesMkt clientesMkt" "grid-footer-index grid-footer-index grid-footer-index grid-footer-index"; }
 
 .grid-navbar-planes {
   grid-area: grid-navbar-planes;
@@ -232,8 +232,8 @@
   grid-area: titulo-secundario;
   width: 80%; }
 
-.textocentrado {
-  grid-area: textocentrado; }
+.membrecia {
+  grid-area: membrecia; }
 
 .tabla {
   margin-left: 10%;
@@ -481,7 +481,9 @@ body {
   .bodyplanesgrid {
     display: grid;
     gap: 15px 15px;
-    grid-template-areas: "grid-navbar-planes" "textocentrado" "clientesMkt" "grid-footer-index"; }
+    grid-template-areas: "grid-navbar-planes" "clientesMkt" "grid-footer-index"; }
+  .membrecia {
+    display: none; }
   .titulo-secundario {
     display: none; }
   .tabla {

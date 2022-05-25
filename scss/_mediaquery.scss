@@ -226,7 +226,6 @@
        grid-template-areas: 
      
        "grid-navbar-planes"
-       "textocentrado"
        "clientesMkt"
        "grid-footer-index";
      
@@ -234,6 +233,11 @@
      }
 
 
+     .membrecia
+     { 
+        display: none;  
+     }
+     
      .titulo-secundario
      { 
         display: none;  
