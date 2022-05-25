@@ -219,7 +219,29 @@
       }
 
      /*-----------------------------------GRID DE PAGINA DE PLAN DE CONTENIDO-----------------------------------------------------*/
+     .bodyplanesgrid 
+     { 
+       display: grid;
+       gap: 15px 15px;
+       grid-template-areas: 
+     
+       "grid-navbar-planes"
+       "textocentrado"
+       "clientesMkt"
+       "grid-footer-index";
+     
+          
+     }
 
+
+     .titulo-secundario
+     { 
+        display: none;  
+     }
+     .tabla 
+     { 
+        display: none;  
+     }
   
 
      /*-----------------------------------GRID DE PAGINA DE NOSOTROS--------------------------------------------------------------*/
