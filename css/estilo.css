@@ -237,6 +237,7 @@
 
 #tabla {
   margin-left: 10%;
+  margin-right: 10%;
   grid-area: tabla;
   border-style: solid;
   /*borde solido*/
@@ -532,13 +533,13 @@ table {
   text-align: center; }
 
 th {
-  font-size: 1.5rem;
+  font-size: 100%;
   /*tamaño de la fuente*/
   background-color: #e4b248;
   /*cambia el fondo*/ }
 
 td {
-  font-size: 1rem;
+  font-size: 100%;
   /*tamaño de la fuente*/
   background-color: #e6d49a;
   /*cambia el fondo*/ }
